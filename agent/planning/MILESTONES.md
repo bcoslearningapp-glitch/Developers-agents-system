@@ -1,0 +1,11 @@
+# Milestones
+
+| ID | Outcome | Status | Entry criteria | Exit criteria |
+|---|---|---|---|---|
+| M1 | Foundation & local data layer: project scaffold, versioned local persistence engine, navigable app shell for Today/Progress/30-Day Plan/Weekly Review/History (empty states) | in-progress | Architecture (`STACK.md`, `DATA.md`, `ARCHITECTURE.md`) approved | App builds and runs locally; all 5 nav destinations reachable; a record can be created/read/updated in local storage and survives reload, covered by tests |
+| M2 | Onboarding + Today: start-date onboarding, 6-indicator daily rating, day type, reflection, live adherence score, save/edit today | not started | M1 exit criteria met | User can set a start date once, log Day 1 fully (FR-001–FR-005, FR-007), and the entry + score persist across reload |
+| M3 | 30-Day Plan: all 30 days grouped into the 4 phases with correct status and drill-down | not started | M2 exit criteria met | 30-Day Plan (FR-006, FR-010) shows correct phase grouping and day status (completed/missed/today/future) and opens a day's detail |
+| M4 | Progress & insights: overall adherence, streaks, completed days, per-indicator averages, 30-day trend, indicator trends, data-only insights | not started | M3 exit criteria met | Progress (FR-009) renders all listed stats/trends correctly against real local data, with insights gated by the data-sufficiency rule (BR-8) |
+| M5 | Weekly Review & History: per-week summary + weekly reflection; browse/edit any past day | not started | M4 exit criteria met | Weekly Review (FR-011) and History (FR-008, FR-012) work for all 4 weeks and any past day, edits recompute aggregates |
+| M6 | Data portability & visual system: export/import with confirmation; responsive polish; calm/minimal Kaizen visual system applied across all screens | not started | M5 exit criteria met | Export/import (FR-013, FR-014) round-trips data losslessly with confirmation on overwrite; UI meets `IMPLEMENTATION_RULES.md` and NFR responsive/accessibility bar on mobile and desktop |
+| M7 | Release readiness: quality gates, accessibility and performance pass, release checklist | not started | M6 exit criteria met | `QUALITY_GATES.md` and `quality/RELEASE_CHECKLIST.md` pass for the full app |
