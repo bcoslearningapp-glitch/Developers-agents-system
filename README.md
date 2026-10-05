@@ -1,4 +1,4 @@
-# Zoo Agent Starter
+# Developer Agent Starter
 
 A file-backed software-engineering agent system that keeps Claude Code in the control plane while delegating implementation to approved free-plan models.
 
